@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community Health Checker</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <h1>Community Health Tracker App</h1>
+    <p>" 🩺Your Pocket Doctor – Track 📝. Remind ⏰. Stay Healthy💪!"</p>
+  </header>
+
+  
+  <div class="form-container">
+    <h1>🤒 Not Feeling Great? Let’s Track It Together 📊</h1>
+
+    <form id="healthForm">
+      <div class="form-group">
+        <label><input type="checkbox" name="symptom" value="fever"> Fever</label><br>
+        <label for="FC">Select Condition:</label>
+        <select id="FC" name="FeverCondition">
+          <option value="" selected disabled hidden>Select fever Severity</option>
+          <option value="mild">Mild (99-100°F)</option>
+          <option value="moderate">Moderate (100-102°F)</option>
+          <option value="high">High (>102°F)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" name="symptom" value="cough"> Cough</label><br>
+        <label for="CT">Cough Type:</label>
+        <select id="CT" name="CoughType">
+          <option value="" selected disabled hidden>Select Cough Type</option>
+          <option value="dry">Dry Cough</option>
+          <option value="wet">Wet Cough (with mucus)</option>
+          <option value="persistent">Persistent Cough</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" name="symptom" value="headache"> Headache</label><br>
+        <label for="HS">Headache:</label>
+        <select id="HS" name="HeadacheSeverity">
+          <option value="" selected disabled hidden>Select Headache Severity</option>
+          <option value="Bearable">Bearable pain</option>
+          <option value="Unbearable">Unbearable pain</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" name="symptom" value="fatigue"> Fatigue</label>
+        <label><input type="checkbox" name="symptom" value="Body Rash"> Body Rash</label>
+        <label><input type="checkbox" name="symptom" value="Cold"> Cold (or Runny nose)</label>
+        <label><input type="checkbox" name="symptom" value="Vomiting"> Vomiting</label>
+      </div>
+
+      <button type="button" class="check-btn" onclick="checkHealth()">Check Health</button>
+      <div id="result" style="margin-top: 20px; font-weight: bold; color: green;"></div>
+      <div id="suggestions"></div>  
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

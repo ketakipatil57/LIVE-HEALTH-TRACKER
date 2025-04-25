@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Georgia', sans-serif;
+    background-color: #e8f6f3;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .form-container {
+   
+    width: 750px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #afee75;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  .form-group {
+    display : flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  select {
+    width: 90%; /* You can try 60%, 50% too */
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 1cap;
+  }
+  
+  .check-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #15ebce;
+    color: white;
+    border: rgb(106, 235, 170);
+    border-radius: 6cap;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .check-btn:hover {
+    background-color: #33d4cc;
+  }
+  
